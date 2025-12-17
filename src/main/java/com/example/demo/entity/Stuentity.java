@@ -5,6 +5,7 @@ import jarkata.persistence.GeneratedValue;
 import jarkata.persistence.Id;
 
 @Entity
+//@Table(name="students")
 public class Stuentity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
