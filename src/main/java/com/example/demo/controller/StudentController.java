@@ -1,5 +1,13 @@
 package com.example.demo.controller;
 
-public class StudentController {
-    
+
+@RestController
+public class StudentController{
+    @Autowired
+    StudentService studentService;
+
+    @PostMapping("/postdata")
+    public Student postdata(@RequestBody Stuentity student){
+        return studentService.saveStudent(student);
+    }
 }
