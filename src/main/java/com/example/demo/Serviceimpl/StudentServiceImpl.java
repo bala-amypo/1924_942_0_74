@@ -13,7 +13,8 @@ public class StudentServiceImpl implements StudentService{
     }
 
     public Stuentity saveStudent(Stuentity student){
-        return
+        return studentRepository.save(student);
+
     }
 
 }
